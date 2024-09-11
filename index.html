@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Especial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playwright+Cuba:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playwright Cuba', cursive;
+            background: url('https://image.cdn2.seaart.ai/2024-09-11/crgduqte878c7395of4g/1c50ebd902407f22579cdf5e5746ede11a5b2061_high.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            text-align: center;
+        }
+        .card h1 {
+            color: #faa2f3;
+        }
+        .card p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #b0b0b0;
+        }
+        .button {
+            background-color: #f393ce;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e45f51;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Para alguien muy especial</h1>
+        <p id="intro">Querida Ojitos,</p>
+        <p id="message">Esta carta quería presentarla de una forma más creativa, así que decidí hacerte una página web para expresarte lo mucho que te quiero, te extraño y te pienso. La verdad es que no hay día en el que no pases por mi mente. Eres una chica espectacular y cada vez me demuestras que eres un regalo que Dios mandó a mi vida. Sé que eres una bendición para las personas que te conocen. Los recuerdos inundan mi mente de una forma sana y linda, recordándome que lo que tenemos es único, y eso me llena de felicidad.<br><br>
+        Anahi, no sabes cuánto valor tiene cada gesto tuyo para mí, desde el tacto físico hasta la forma en que abrazas mi alma y corazón. Siempre hemos dicho que nuestra conexión es gracias a Dios, y eso lo siento cada vez que te veo a los ojos, cada vez que te abrazo, cada vez que siento tu perfume. Tu presencia llena mis sentidos de cosas muy lindas. Esa intimidad siempre me confirma que tengo el honor de presenciar una creación tan hermosa como lo eres tú. Eres fuerte y sé que el proceso que estás pasando solo es confirmación de lo grande que está por venir en tu vida. Recuerda que no estás sola, y como siempre me dices, tu corazón, ya hemos pasado cosas peores. Pronto podremos crear más recuerdos juntos. Por el momento, quiero que tengas claro que tienes mi apoyo y mi corazón a tu lado. Te adoro.</p>
+        <button class="button" onclick="showHiddenMessage()">Click para ver sorpresa</button>
+        <p id="hiddenMessage" style="display:none;" aria-hidden="true">"El extrañarte hace que cada día te ame más" ¡Te Lobo!</p>
+    </div>
+
+    <script>
+        function showHiddenMessage() {
+            var hiddenMessage = document.getElementById('hiddenMessage');
+            hiddenMessage.style.display = 'block';
+
+            var button = document.querySelector('button');
+            button.textContent = '<3';
+            button.disabled = true;
+        }
+    </script>
+</body>
+</html>
